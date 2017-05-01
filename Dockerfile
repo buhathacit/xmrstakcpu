@@ -28,6 +28,9 @@ RUN dos2unix /config.txt
 RUN dos2unix /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+EXPOSE 8080
+
+
 RUN cp -v /config.txt /xmr-stak-cpu-1.2.0-1.4.1/bin/config.txt
 
 ENTRYPOINT ["/entrypoint.sh"]
